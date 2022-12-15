@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <!-- Here is the Header section -->
+    <div class="wrap">
         <header>
-            <nav class="banner">
+            
+            <nav class="nav">
                 <ul>
                     <li class="logo">
                         <img src="images/logo.png" alt="Website Logo">
@@ -28,78 +29,93 @@
                     <li class="team"><a href="#team">Team</a></li>
                     <li class="contact"><a href="#contact">Contact</a></li>
                     <!-- Hyperlinks are used to go to links of each section -->
+                    <div class="input-search">
+                        <input type="text" placeholder="Search">
+                        <!-- And this one below is the icon got from w3 school awesome fonts -->
+                         <i class="fa fa-search"></i>
+                    </div>
                 </ul>
 
-                                    <!-- This is the search bar -->
-                                    <input type="text" placeholder="Search">
-                                    <!-- And this one below is the icon got from w3 school awesome fonts -->
-                                    <i class="fa fa-search"></i>
+
 
             </nav>
 
-            <div class="wrapper" id="home">
-                <div>
-                    <h1>Welcome to Three Stars Media</h1>
+            <div class="wrapper welcome" id="home">
+                <div class="bg-square">
+                    <div class="banner-box">   <h1>Welcome to Three Stars Media</h1>
+                    
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe recusandae quaerat numquam unde
                         magnam quae ut doloremque cupiditate illum. Iste sint facere magnam animi quisquam atque veritatis
-                        consequatur dicta quas.</p>
-                    <button class="banner-buttom">
-                        connect with us<i class='fa fa-caret-right'></i>
-                    </button>
+                        consequatur dicta quas.</p> 
+                    <button class="banner-button"> 
+                        connect with us<i class="icon">  ▶</i>
+                    </button> </div>
+                    
                 </div>
-            </div>
+        </div>
 
-            
-        </header>
 
-        
+    </header>
+
+
 
 
     <main>
         <div class="about-us wrapper" id="about-us">
             <div>
-                <div><img src="images/about-us.jpg" alt="about us photo (ping pong table)"></div>
-                <div>
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, assumenda ab. Maxime consequuntur
-                        ipsum
-                        dignissimos totam, consequatur harum quidem maiores voluptas quasi quibusdam, illum esse placeat
-                        itaque accusamus animi culpa?</p>
+                
+                <div class="about-us-section">
+                    <img src="images/about-us.jpg" alt="about us photo (ping pong table)">
+                        
+                        <div>
+                            <h2>About Us</h2>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, assumenda ab. Maxime consequuntur
+                            ipsum
+                            dignissimos totam, cwonsequatur harum quidem maiores voluptas quasi quibusdam, illum esse placeat
+                            itaque accusamus animi culpa?</p>
+                            <br>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime, eligendi commodi
-                        nisi,
-                        ipsam culpa corporis possimus corrupti rem, eveniet veniam illo laborum minima deleniti. Totam
-                        accusantium dignissimos tenetur sapiente.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime, eligendi commodi
+                            nisi,
+                            ipsam culpa corporis possimus corrupti rem, eveniet veniam illo laborum minima deleniti. Totam
+                            accusantium dignissimos tenetur sapiente.</p>
+                        </div>       
                 </div>
-<!-- add div for seperation -->
+                <!-- add div for seperation in css grid -->
             </div>
         </div>
         <div class="our-services" id="services">
             <div class="a"></div>
             <h2>Our Services</h2>
-
-            <div class="b">
-                <img src="images/digital.jpg" alt="digital section">
+            <img src="images/digital.jpg" alt="digital section">
+            <div class="digital-section">
+                
                 <h2>Digital Transformation</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
                     perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
                     corporis saepe eos nisi quia.</p>
-                <button>
-                    Digital Plans <i class='fa fa-caret-right'></i>
-                </button>
+
+<!-- My font awsome icon was not working. SPA suggested using this arrow icon for button -->
+
+                    <button> 
+                        Digital plans<i class="icon"> ▶</i>
+                    </button>
             </div>
 
-<!-- This is the marketing section -->
+            <!-- This is the marketing section -->
 
             <div class="marketing">
                 <img src="images/marketing.jpg" alt="marketing section">
                 <h2>Marketing</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
-                    perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
-                    corporis saepe eos nisi quia.</p>
-                <button>
-                    Marketing Plans <i class='fa fa-caret-right'></i>
-                </button>
+                <div class="text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
+                        perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
+                        corporis saepe eos nisi quia.</p>
+                        <button> 
+                            Marketing Plans<i class="icon"> ▶</i>
+                        </button>
+                </div> 
             </div>
 
             <div class="video">
@@ -108,9 +124,9 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
                     perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
                     corporis saepe eos nisi quia.</p>
-                <button>
-                    video Plans <i class='fa fa-caret-right'></i>
-                </button>
+                    <button> 
+                        Video Plans<i class="icon"> ▶</i>
+                    </button>
             </div>
 
             <div class="web">
@@ -119,9 +135,9 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
                     perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
                     corporis saepe eos nisi quia.</p>
-                <button>
-                    Web Plans <i class='fa fa-caret-right'></i>
-                </button>
+                    <button> 
+                        Web Plans<i class="icon"> ▶</i>
+                    </button>
             </div>
 
             <div class="print">
@@ -130,9 +146,9 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere consequatur porro eligendi
                     perferendis animi hic labore tempora praesentium quae, architecto ad exercitationem libero debitis
                     corporis saepe eos nisi quia.</p>
-                <button>
-                    Print Plans <i class='fa fa-caret-right'></i>
-                </button>
+                    <button> 
+                        Print Plans<i class="icon"> ▶</i>
+                    </button>
             </div>
 
         </div>
@@ -143,39 +159,54 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem sit doloremque incidunt
                     corporis recusandae eius quae minus molestias, sunt necessitatibus dolorum saepe. Reiciendis
                     expedita vitae dolores labore architecto autem!</p>
-                <button>
-                    Learn More <i class='fa fa-caret-right'></i>
-                </button>
+                    <button> 
+                        Learn More<i class="icon"> ▶</i>
+                    </button>
             </div>
         </div>
 
-        <div class="our team" id="team">
-            <div class="a">photo</div>
+
+
+        <div class="our-team" id="team">
+            <div class="a"></div>
             <h2>Our Team</h2>
+
+            <div>
+                <div class="john-photo">
+                    <img src="images/john.jpg" alt="picture of one of the teammates naming John">
+                </div>
+                <div class="john">
+                    <h3>John doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <hr class="new1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta commodi non sapiente impedit! Eius ea
+                        perferendis placeat doloribus dolor temporibus sunt, id veritatis. Odio ipsum omnis doloremque, sit sed
+                        voluptates.</p>
+                </div>
+            </div>
+            
+            <div>
+                <div class="Bob-photo">
+                    <img src="images/bob.jpg" alt="CFO Bob">
+                </div>
+                <div class="bob">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <hr class="new1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aut minima! Ex voluptate doloremque
+                        ipsam veritatis, ab nihil neque repellendus saepe quod necessitatibus dolorem commodi natus debitis
+                        minima iste reprehenderit.</p>
+                </div>
+            </div>
         </div>
 
-        <img src="images/john.jpg" alt="picture of one of the teammates naming John">
-        <div>
-            <h2>John doe</h2>
-            <h3>CEO and Co-owner</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta commodi non sapiente impedit! Eius ea
-                perferendis placeat doloribus dolor temporibus sunt, id veritatis. Odio ipsum omnis doloremque, sit sed
-                voluptates.</p>
-        </div>
+        
 
-        <div>
-            <h2>Bob Rite</h2>
-            <h3>CFO and Co-owner</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aut minima! Ex voluptate doloremque
-                ipsam veritatis, ab nihil neque repellendus saepe quod necessitatibus dolorem commodi natus debitis
-                minima iste reprehenderit.</p>
 
-        </div>
+        
 
         <!-- adding photos to teams section -->
-        <div class="Bob-photo">
-            <img src="images/bob.jpg" alt="CFO Bob">
-        </div>
+
 
         <div class="contact-us" id="contact">
             <div>
@@ -185,37 +216,31 @@
 
 
                 <div class="box-2">
-                <h3>Send us a message</h3>
-                
-
-                <fieldset>
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name">
-                </fieldset>
-
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                </fieldset>
-
-                <fieldset>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </fieldset>
-
-                <button>Send</button>
-            </div>
+                    <h3>Send us a message</h3>
 
 
+                    <fieldset>
+                        <label for="full-name">Full Name</label>
+                        <br>
+                        <input type="text" id="full-name" name="full-name">
+                    </fieldset>
 
-                <div class="location" id="location">
-                    <h1>Location</h1>
-                    <!--   This is the location of google grabed from google map link share -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669758657263!5m2!1sen!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" id="email" name="email">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </fieldset>
+
+                    <button>Send</button>
                 </div>
+
+
 
 
                 <div class="box-4">
@@ -223,25 +248,25 @@
 
                     <table>
                         <thead>
-                          <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                          </tr>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
 
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Monday-Friday</td>
-                            <td>9 Am- 6Pm</td>
-                          </tr>
-                          <tr>
-                            <td>Saturday-Sunday</td>
-                            <td>Closed</td>
-                          </tr>
+                            <tr>
+                                <td>Monday-Friday</td>
+                                <td>9 Am- 6Pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday-Sunday</td>
+                                <td>Closed</td>
+                            </tr>
                         </tbody>
-                      </table>
-                      
-            
+                    </table>
+
+
                     <!-- <section class="hour">
                         <div class="box-1">Days</div>
                         <div class="box-2">Hours</div>
@@ -253,16 +278,24 @@
                 </div>
             </div>
         </div>
-
+                <div class="location" id="location">
+                    <h2>Location</h2>
+                    <!--   This is the location of google grabed from google map link share -->
+                    <div class="map"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669758657263!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
     </main>
 
     <!-- This is the footer section showing the files -->
     <footer>
         <p>&copy; Copyright Three Star Media, 2020</p>
-        <p> All images are taken from Unsplash <a href="https://unsplash.com/">Unspalsh</a> </p>
+        <p> All images are taken from <a href="https://unsplash.com/">Unspalsh</a> </p>
     </footer>
 
-
+</div>
 </body>
 
 </html>
