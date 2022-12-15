@@ -161,7 +161,7 @@ input {
 
 
 .bg-square {
-    background-image: url("../images/main-banner.jpg");
+    background-image: url("/images/main-banner.jpg");
     background-color: #cccccc;
     background-position: center; 
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ input {
   }
 
   .vision {
-    background-image: url("../images/vision.jpg");
+    background-image: url("/images/vision.jpg");
     background-color: #cccccc;
     background-position: center; 
     background-repeat: no-repeat;
